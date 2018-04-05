@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.radek.lab2.MainActivity">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editName"
+            android:layout_alignParentLeft="true"
+            android:text="Imie" />
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name"
+             />
+
+
+        <TextView
+            android:id="@+id/surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignBaseline="@+id/editSurname"
+            android:text="Nazwisko"
+            />
+        <EditText
+            android:id="@+id/editSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editName"
+            android:layout_toRightOf="@+id/surname"/>
+
+        <TextView
+            android:id="@+id/marksNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/surname"
+            android:layout_alignBaseline="@id/editMarks"
+            android:text="Liczba ocen" />
+        <EditText
+            android:id="@+id/editMarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/marksNumber"
+            android:layout_below="@id/editSurname"/>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marksNumber"/>
+
+    <Button
+        android:id="@+id/marksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oceny"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editMarks"/>
+
+</RelativeLayout>
